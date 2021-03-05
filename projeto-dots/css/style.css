@@ -1,0 +1,44 @@
+/* centralizar */
+body {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    background: #141414;
+}
+
+.dots {
+    /* deixa os pontos alinhados horizontalmente */
+    display: flex;
+}
+
+.dots div {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    background: #7400b8;
+    border-radius: 50%;
+    animation: wave 1s ease-in-out infinite alternate;
+}
+
+/* animação */
+.dots div:nth-child(1) {
+    animation-delay: -0.4s;
+}
+
+.dots div:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+@keyframes wave {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}

@@ -1,0 +1,39 @@
+.toggle {
+    display: none;
+}
+
+.toggle + label {
+    width: 32px;
+    height: 20px;
+    padding: 2px;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    transition: 200ms;
+    cursor: pointer;
+    background: lightgrey;
+}
+
+.toggle + label::before {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    right: unset;
+    left: 2px;
+    top: 2px;
+    transition: 200ms;
+    content: '';
+    background: white;
+}
+
+.toggle:checked + label {
+    background: blue;
+}
+
+.toggle:checked + label::before {
+    content: '';
+    left: calc(100% - 22px);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+}

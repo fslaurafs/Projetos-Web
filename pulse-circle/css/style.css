@@ -1,0 +1,45 @@
+/* centralizar */
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    background: black;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #6a00f4;
+    animation: circle 2.5s ease-in-out infinite;
+}
+
+/* animação */
+@keyframes circle {
+    0% {
+        border-color: #6a00f4;
+        transform: scale(1);
+    }
+
+    25% {
+        border-color: #a100f2;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-color: #bc00dd;
+        transform: scale(1.15);
+    }
+
+    75% {
+        border-color: #db00b6;
+        transform: scale(0.7);
+    }
+
+    100% {
+        border-color: #2d00f7;
+        transform: scale(1);
+    }
+}

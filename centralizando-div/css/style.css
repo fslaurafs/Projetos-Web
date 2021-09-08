@@ -1,0 +1,35 @@
+/*  UTILIZANDO POSITION ABSOLUTE */
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*  UTILIZANDO DISPLAY GRID
+.centro {
+    display: grid;
+    place-items: center;
+}
+*/
+
+/* UTILIZANDO FLEXBOX
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+/* UTILIZANDO MARGIN
+.centro {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+*/
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
